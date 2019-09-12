@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../Content/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../../Content/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../../Content/css/swiper.css" type="text/css" />
+
+    <!-- One Page Module Specific Stylesheet -->
+    <link rel="stylesheet" href="../../Content/css/onepage.css" type="text/css" />
+    <!-- / -->
+
+    <link rel="stylesheet" href="../../Content/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="../../Content/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="../../Content/css/et-line.css" type="text/css" />
+    <link rel="stylesheet" href="../../Content/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../../Content/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="../../Content/css/magnific-popup.css" type="text/css" />
+
+    <link rel="stylesheet" href="../../Content/css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="../../Content/css/bs-rating.css" type="text/css" />
+
+    <link rel="stylesheet" href="../../Content/css/responsive.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+
+
+
+</head>
+
+
+    @RenderBody()
+
+
+
+
+    <!-- External JavaScripts
+       ============================================= -->
+    <script src="../../Content/scripts/jquery-3.3.1.js"></script>
+    <script src="../../Content/scripts/plugins.js"></script>
+
+    <script src="../../Content/scripts/star-rating.js"></script>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script src="../../Content/scripts/functions.js"></script>
+
+    <script src="../../Content/scripts/jquery.gmap.js"></script>
+
+
+    <script>
+
+        jQuery(window).on('load', function () {
+
+            // Google Map
+            jQuery('#headquarters-map').gMap({
+                address: 'Melbourne, Australia',
+                maptype: 'ROADMAP',
+                zoom: 14,
+                markers: [
+                    {
+                        address: "Melbourne, Australia",
+                        html: "Melbourne, Australia",
+                        icon: {
+                            image: "images/icons/map-icon-red.png",
+                            iconsize: [32, 32],
+                            iconanchor: [14, 44]
+                        }
+                    }
+                ],
+                doubleclickzoom: false,
+                controls: {
+                    panControl: false,
+                    zoomControl: false,
+                    mapTypeControl: false,
+                    scaleControl: false,
+                    streetViewControl: false,
+                    overviewMapControl: false
+                },
+                styles: [{ "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#000000" }, { "lightness": 40 }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 17 }, { "weight": 1.2 }] }, { "featureType": "administrative", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative.country", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "administrative.country", "elementType": "geometry", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "administrative.country", "elementType": "labels.text", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "administrative.province", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative.locality", "elementType": "all", "stylers": [{ "visibility": "simplified" }, { "saturation": "-100" }, { "lightness": "30" }] }, { "featureType": "administrative.neighborhood", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative.land_parcel", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "visibility": "simplified" }, { "gamma": "0.00" }, { "lightness": "74" }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "landscape.man_made", "elementType": "all", "stylers": [{ "lightness": "3" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 21 }] }, { "featureType": "road", "elementType": "geometry", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 19 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }]
+            });
+
+        });
+
+    </script>
+
+
+    <script>
+
+        $("#input-7").rating({
+            containerClass: 'is-heart',
+            filledStar: '<i class="icon-heart3"></i>',
+            emptyStar: '<i class="icon-heart-empty"></i>',
+            starCaptions: { 0: "Not Rated", 1: "Very Poor", 2: "Poor", 3: "Ok", 4: "Good", 5: "Very Good" },
+            starCaptionClasses: { 0: "text-danger", 1: "text-danger", 2: "text-warning", 3: "text-info", 4: "text-primary", 5: "text-success" },
+        });
+
+        $("#input-8").rating({
+            containerClass: '',
+            filledStar: '<i class="icon-flag2"></i>',
+            emptyStar: '<i class="icon-flag-alt"></i>',
+            starCaptions: { 0: "Not Rated", 1: "1 Flags", 2: "2 Flags", 3: "3 Flags", 4: "4 Flags", 5: "5 Flags" },
+            starCaptionClasses: { 0: "text-danger", 1: "text-danger", 2: "text-warning", 3: "text-info", 4: "text-primary", 5: "text-success" },
+        });
+
+        $("#input-11").rating({
+            starCaptions: { 0: "Not Rated", 1: "Very Poor", 2: "Poor", 3: "Ok", 4: "Good", 5: "Very Good" },
+            starCaptionClasses: { 0: "text-danger", 1: "text-danger", 2: "text-warning", 3: "text-info", 4: "text-primary", 5: "text-success" },
+        });
+
+        $("#input-13").on("rating.clear", function (event) {
+            $('#rating-notification-message').attr('data-notify-type', 'error').attr('data-notify-msg', 'Your rating is reset');
+            SEMICOLON.widget.notifications(jQuery('#rating-notification-message'));
+        });
+        $("#input-13").on("rating.change", function (event, value, caption) {
+            $('#rating-notification-message').attr('data-notify-msg', 'You rated: ' + value + ' Stars');
+            SEMICOLON.widget.notifications(jQuery('#rating-notification-message'));
+        });
+
+        $("#input-14").on("rating.change", function (event, value, caption) {
+            $("#input-14").rating("refresh", { disabled: true, showClear: false });
+        });
+
+    </script>
+
+</body>
+</html>

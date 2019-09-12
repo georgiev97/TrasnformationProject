@@ -1,0 +1,343 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+    img {
+        height: 200px;
+    }
+</style>
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+        ============================================= -->
+        <header id="header" class="transparent-header semi-transparent dark full-header" data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="100">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo">
+                        <a href="Home/Index" class="standard-logo" data-dark-logo="../../Content/images/logo.png"><img src="../../Content/images/logo.png" alt="Canvas Logo"></a>
+                        <a href="Home/Index" class="retina-logo" data-dark-logo="../../Content/images/logo.png"><img src="../../Content/images/logo.png" alt="Canvas Logo"></a>
+
+                    </div><!-- #logo end -->
+                    <!-- Primary Navigation
+                    ============================================= -->
+                    <nav id="primary-menu">
+
+                        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+                            <li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
+                            <li><a href="#" data-href="#section-our-goal"><div>Our goal</div></a></li>
+                            <li><a href="#" data-href="#section-motivation"><div>Motivation</div></a></li>
+                            <li><a href="#" data-href="#section-gallery"><div>Gallery</div></a></li>
+                            <li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
+                            <li><a href="@Url.Action("Login", "User")"><div>Login</div></a></li>
+                        </ul>
+
+                    </nav><!-- #primary-menu end -->
+
+                </div>
+
+            </div>
+
+        </header><!-- #header end -->
+
+        <section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix">
+
+            <div class="slider-parallax-inner">
+
+                <div class="swiper-container swiper-parent">
+                    fo
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide dark" style="background-image: url('../../Content/images/page/slider/slider-1.jpeg');">
+                            <div class="container clearfix">
+                                <div class="slider-caption slider-caption-center">
+                                    <h2 data-caption-animate="fadeInUp">Transformation</h2>
+                                    <p class="d-none d-sm-block" data-caption-animate="fadeInUp" data-caption-delay="200">Start thinking for your Health &amp; Start training.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide dark" style="background-image: url('../../Content/images/page/slider/slider-2.jpeg');">
+                            <div class="container clearfix">
+                                <div class="slider-caption slider-caption-center">
+                                    <h2 data-caption-animate="fadeInUp">Change Your Life</h2>
+                                    <p class="d-none d-sm-block" data-caption-animate="fadeInUp" data-caption-delay="200">Start live healthy &amp; explore this new world</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide dark" style="background-image: url('../../Content/images/page/slider/slider-3.jpeg'); background-position: center top;">
+                            <div class="container clearfix">
+                                <div class="slider-caption">
+                                    <h2 data-caption-animate="fadeInUp">Start now</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
+                    <div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+                </div>
+
+                <a href="#" data-scrollto="#section-our-goal" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+
+            </div>
+
+        </section>
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div id="section-our-goal" class="page-section notoppadding">
+                <div class="content-wrap nopadding">
+
+                    <div class="container clearfix">
+
+                        <div class="col_one_third">
+
+                            <div class="heading-block fancy-title nobottomborder title-bottom-border">
+                                <br /><br />
+                                <h4>Why choose <span>Transformation</span>.</h4>
+                            </div>
+
+                            <p>We offer you place that will motivate you to start your transformation to become healthier. You can create own training and nutrition programs and we rate your training. You will have the chance to be in the top users for the healthy lifestyle.</p>
+
+                        </div>
+
+                        <div class="col_one_third">
+
+                            <div class="heading-block fancy-title nobottomborder title-bottom-border">
+                                <br /><br />
+                                <h4>Our <span>Mission</span>.</h4>
+                            </div>
+
+                            <p>We want more people to start living healthier and our idea is offering you to do so while you having fun and challenge your friends for our top list users.</p>
+
+                        </div>
+
+                        <div class="col_one_third col_last">
+
+                            <div class="heading-block fancy-title nobottomborder title-bottom-border">
+                                <br /><br />
+                                <h4>What you need <span>Start</span> doing.</h4>
+                            </div>
+
+                            <p>
+                                You will need to be really devoted to the training and nutrition programs that you will create for you.Then you will have to start your days with the idea of doing better than yesterday.
+                                And finally, you will have to have fun while making your progress.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="section nomargin" style="border-bottom: 1.5px solid #1ABC9C;">
+                        <div class="container clearfix">
+
+                            <div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
+                                <i class="i-plain i-xlarge divcenter icon-line2-directions"></i>
+                                <div class="counter counter-lined"><span data-from="0" data-to="3" data-refresh-interval="50" data-speed="2000"></span></div>
+                                <h5>Levels of training</h5>
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="200">
+                                <i class="i-plain i-xlarge divcenter nobottommargin icon-line2-graph"></i>
+                                <div class="counter counter-lined"><span data-from="5" data-to="50" data-refresh-interval="100" data-speed="2500"></span>+</div>
+                                <h5>Variations of training</h5>
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="400">
+                                <i class="i-plain i-xlarge divcenter nobottommargin icon-line2-layers"></i>
+                                <div class="counter counter-lined"><span data-from="5" data-to="30" data-refresh-interval="25" data-speed="3500"></span>+</div>
+                                <h5>Variations of nutritions</h5>
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin center col_last" data-animate="bounceIn" data-delay="600">
+                                <i class="i-plain i-xlarge divcenter nobottommargin icon-line2-clock"></i>
+                                <div class="counter counter-lined"><span data-from="60" data-to="1200" data-refresh-interval="30" data-speed="2700"></span>+</div>
+                                <h5>Hours for workouts</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--Motivation
+                ============================================= -->
+                <div id="section-motivation" class="page-section notoppadding">
+
+                    <div class="row clearfix common-height">
+                        <div class="col-lg-6 center col-padding" style="background-color: #F5F5F5;">
+                            <div style=" border-bottom: 1.5px solid #1ABC9C; ">
+                                <div class="heading-block nobottomborder">
+                                    <h3>You can eat this</h3>
+                                </div>
+
+                                <div class="center bottommargin">
+                                    <img src="../../Content/images/page/burger2.png" alt="burgers">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 center col-padding" style="background-color: #F5F5F5;">
+                            <div style=" border-bottom: 1.5px solid #1ABC9C;">
+                                <div class="heading-block nobottomborder">
+                                    <h3>But this is much better</h3>
+                                </div>
+
+                                <div class="center bottommargin">
+                                    <img src="../../Content/images/page/eat.png" alt="healtgy food">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row clearfix common-height">
+                        <div class="col-lg-6 center col-padding" style="background-color: #F5F5F5;">
+                            <div>
+                                <div class="heading-block nobottomborder">
+                                    <h3>You can do this</h3>
+                                </div>
+
+                                <div class="center bottommargin">
+                                    <img src="../../Content/images/page/phoning.jpg" alt="use phone">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 center col-padding" style="background-color: #F5F5F5;  border-right: 1.5px solid #1ABC9C; ">
+                            <div>
+                                <div class="heading-block nobottomborder">
+                                    <h3>But this is much better</h3>
+                                </div>
+
+                                <div class="center bottommargin">
+                                    <img src="../../Content/images/page/me-parallax.jpg" alt="training">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- #motivation end -->
+                <!--Gallery section-->
+                <div id="section-gallery" class="page-section notoppadding">
+
+                    <div class="section nomargin">
+                        <div class="container clearfix">
+                            <div class="divcenter center" style="max-width: 900px;">
+                                <h2 class="nobottommargin t300 ls1">We wanted to show you some pictures &amp; hope that they will inspire you to Start with your Transformation.</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container clearfix">
+                        <div class="col_full clearfix">
+                            <div class="masonry-thumbs grid-4" data-big="4" data-lightbox="gallery">
+                                <a href="../../Content/images/page/slider/gallery-1.jpg" data-lightbox="gallery-item"><img class="image_fade" src="../../Content/images/page/slider/gallery-1.jpg" alt="Gallery Thumb 1"></a>
+                                <a href="../../Content/images/page/slider/gallery-2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="../../Content/images/page/slider/gallery-2.jpg" alt="Gallery Thumb 2"></a>
+                                <a href="../../Content/images/page/slider/gallery-3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="../../Content/images/page/slider/gallery-3.jpg" alt="Gallery Thumb 3"></a>
+                                <a href="../../Content/images/page/slider/gallery-4.jpg" data-lightbox="gallery-item"><img class="image_fade" src="../../Content/images/page/slider/gallery-4.jpg" alt="Gallery Thumb 4"></a>
+                                <a href="../../Content/images/page/slider/gallery-5.jpeg" data-lightbox="gallery-item"><img class="image_fade" src="../../Content/images/page/slider/gallery-5.jpeg" alt="Gallery Thumb 5"></a>
+                                <a href="../../Content/mages/page/slider/gallery-6.jpg" data-lightbox="gallery-item"><img class="image_fade" src="../../Content/images/page/slider/gallery-6.jpg" alt="Gallery Thumb 6"></a>
+                                <a href="../../Content/images/page/slider/gallery-7.jpeg" data-lightbox="gallery-item"><img class="image_fade" src="../../Content/images/page/slider/gallery-7.jpeg" alt="Gallery Thumb 7"></a>
+                                <a href="../../Content/images/page/slider/gallery-8.jpg" data-lightbox="gallery-item"><img class="image_fade" src="../../Content/images/page/slider/gallery-8.jpeg" alt="Gallery Thumb 8"></a>
+                                <a href="../../Content/images/page/slider/gallery-9.jpg" data-lightbox="gallery-item"><img class="image_fade" src="../../Content/images/page/slider/gallery-9.jpeg" alt="Gallery Thumb 9"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Gallery section End-->
+                <!--Contact section-->
+                <div id="section-contact" class="page-section notoppadding">
+
+                    <div class="container clearfix">
+
+                        <div class="divcenter topmargin" style="max-width: 850px;">
+
+                            <div class="contact-widget">
+
+                                <div class="contact-form-result"></div>
+
+                                <form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/sendemail.php" method="post">
+
+                                    <div class="form-process"></div>
+
+                                    <div class="col_half">
+                                        <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control border-form-control required" placeholder="Name" />
+                                    </div>
+                                    <div class="col_half col_last">
+                                        <input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control border-form-control" placeholder="Email Address" />
+                                    </div>
+
+                                    <div class="clear"></div>
+
+
+                                    <div class="col_full">
+                                        <input type="text" id="template-contactform-subject" name="template-contactform-subject" value="" class="required sm-form-control border-form-control" placeholder="Subject" />
+                                    </div>
+
+                                    <div class="clear"></div>
+
+                                    <div class="col_full">
+                                        <textarea class="required sm-form-control border-form-control" id="template-contactform-message" name="template-contactform-message" rows="7" cols="30" placeholder="Your Message"></textarea>
+                                    </div>
+
+                                    <div class="col_full center">
+                                        <button form="template-contactform" class="button button-border button-circle t500 noleftmargin topmargin-sm" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+                                        <br>
+                                        <small style="display: block; font-size: 13px; margin-top: 15px;">Send us your feedback and tell us how to improve our selfs.</small>
+                                    </div>
+
+                                    <div class="clear"></div>
+
+                                    <div class="col_full hidden">
+                                        <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Contact section End-->
+
+            </div>
+
+
+        </section><!-- #content end -->
+        <!-- Footer
+        ============================================= -->
+        <footer id="footer" class="dark noborder">
+
+            <div id="copyrights">
+                <div class="container center clearfix">
+                    Copyright Canvas 2015 | All Rights Reserved
+                </div>
+            </div>
+
+        </footer><!-- #footer end -->
+
+    </div><!-- #wrapper end -->
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+
+
+
